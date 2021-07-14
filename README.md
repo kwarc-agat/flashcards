@@ -19,14 +19,18 @@ Frontend for web app allowing users to manage their own flashcards lessons.
 
 ## Demo
 
-<i>in preparation</i>
+![](https://github.com/kwarc-agat/flashcards/blob/master/demo_images/dashboard.jpg)
+![](https://github.com/kwarc-agat/flashcards/blob/master/demo_images/lessons.jpg)
+![](https://github.com/kwarc-agat/flashcards/blob/master/demo_images/edit_lesson.jpg)
+![](https://github.com/kwarc-agat/flashcards/blob/master/demo_images/start_lesson.jpg)
+![](https://github.com/kwarc-agat/flashcards/blob/master/demo_images/finish_lesson.jpg)
 
 ## Getting started
 
 Make sure NPM is installed and run:
 
 ```sh
-git clone <some url>
+git clone https://github.com/kwarc-agat/flashcards.git
 npm install
 npm start
 ```
