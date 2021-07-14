@@ -1,23 +1,40 @@
+import React from 'react';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import Dashboard from './components/Dashboard/Dashboard';
+import Header from './components/Header/Header';
+import Lessons from './components/Lessons/Lessons';
+import Lesson from './components/Dashboard/Lesson'
+import ModifyLesson from './components/Lessons/ModifyLesson';
+import AddLesson from './components/Lessons/AddLesson';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <br/>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/dashboard">
+            <Dashboard />
+          </Route>
+          <Route path="/lessons">
+            <Lessons />
+          </Route>
+          <Route path="/lesson/:id"
+            render={(props) => <Lesson {...props} />} />
+          <Route path="/add">
+            <AddLesson />
+          </Route>
+          <Route path="/edit/:id" 
+            render={(props) => <ModifyLesson {...props} />}/>
+          <Route path="/">
+            <Dashboard />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

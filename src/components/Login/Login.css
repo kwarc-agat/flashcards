@@ -1,0 +1,25 @@
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url('../../img/london-light.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.input-custom {
+    font-size:24px;
+}
+
+p {
+    font-size:24px;
+    font-weight: bold;
+}
+
+.error{
+    background-color: aliceblue;
+    color: red;
+}
